@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="io.spectruminnovations.www.storyboard.Page3">
+
+    <ImageView
+        android:layout_width="786dp"
+        android:layout_height="245dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/website_example_1"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=
+            "
+  One cool thing to do is to have buttons (or any 'View' element) point to a website when it is clicked
+  \n\nSee the code for this page (Page 3) for the basic syntax.
+  \n\nRemember that all the code will be on the GitHub 'Intent-Superpowers' and 'Buttons' Links
+        "
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goto Github"
+        android:id="@+id/button_github"
+        android:layout_alignTop="@+id/button_map"
+        android:layout_toLeftOf="@+id/button_map"
+        android:layout_toStartOf="@+id/button_map" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goto Map"
+        android:id="@+id/button_map"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Page 4"
+        android:id="@+id/button_page_4"
+        android:layout_alignTop="@+id/button_map"
+        android:layout_toRightOf="@+id/button_map"
+        android:layout_toEndOf="@+id/button_map" />
+
+</RelativeLayout>

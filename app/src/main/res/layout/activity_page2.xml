@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="io.spectruminnovations.www.storyboard.Page2"
+    android:id="@+id/page_2_layout">
+
+    <TextView android:text=
+        "You are able to add images by dragging any image from a folder, and dropping it into the &apos;drawable&apos; folder. \n\n Note that you should name the file properly: no spaces, and use only lowercase letters and underscores &apos;_&apos;s (no hyphens) \n\n After adding the image to your project, drag and drop an &apos;ImageView&apos; in the gui, and set the &apos;src&apos; (in the bottom right hand panel) to the name of the image (use the &apos;...&apos; visible when you click on the space to the right of &apos;src&apos;). "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="63dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/golden_fog_san_francisco"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click For Page 3"
+        android:id="@+id/page_2_button"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="'Golden Fog, San Francisco' by runner310 - Flickr: Golden Fog. Licensed under CC BY 2.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Golden_Fog,_San_Francisco.jpg#mediaviewer/File:Golden_Fog,_San_Francisco.jpg"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="7dp" />
+
+</RelativeLayout>
